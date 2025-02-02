@@ -99,7 +99,7 @@ export CAMERA_PASS=admin      # Camera password
 
 The night runner script (`night_runner.sh`) can be configured by editing these variables:
 - `START_HOUR`: Hour to start surveillance (default: 23 / 11 PM)
-- `END_HOUR`: Hour to stop surveillance (default: 6 / 6 AM)
+- `END_HOUR`: Hour to stop surveillance (default: 5 / 5 AM)
 
 ## Running
 
