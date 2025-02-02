@@ -92,9 +92,9 @@ The deployment package will be created as `security_camera.tar` in the build dir
 Configure the camera settings by setting environment variables:
 
 ```bash
-export CAMERA_HOST=192.168.1.64  # Camera IP address
-export CAMERA_USER=admin         # Camera username
-export CAMERA_PASS=admin123      # Camera password
+export CAMERA_HOST=192.x.x.x  # Camera IP address
+export CAMERA_USER=admin      # Camera username
+export CAMERA_PASS=admin      # Camera password
 ```
 
 The night runner script (`night_runner.sh`) can be configured by editing these variables:
