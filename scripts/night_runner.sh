@@ -2,7 +2,7 @@
 
 # Configuration
 START_HOUR=23  # 11 PM
-END_HOUR=6     # 6 AM
+END_HOUR=5     # 5 AM
 INSTALL_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"  # Get script directory
 PID_FILE="/tmp/night_camera.pid"
 
