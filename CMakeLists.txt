@@ -1,4 +1,3 @@
-# Project root CMakeLists.txt
 cmake_minimum_required(VERSION 3.10)
 project(SecurityCamera)
 
@@ -16,9 +15,17 @@ find_package(OpenCV REQUIRED)
 
 # Include directories
 include_directories(${OpenCV_INCLUDE_DIRS})
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
+# Source files
+set(SOURCES
+    src/main.cpp
+    src/logger.cpp
+    src/video_processor.cpp
+)
 
 # Add C++ executable
-add_executable(video_processor src/video_processor.cpp)
+add_executable(video_processor ${SOURCES})
 
 # Link libraries for C++ executable
 target_link_libraries(video_processor 
@@ -50,7 +57,7 @@ add_custom_command(
         ${DEPLOY_DIR}/
 )
 
-# Set executable permissions for night_runner.sh
+# Set executable permissions for scripts
 add_custom_command(
     TARGET video_processor POST_BUILD
     COMMAND chmod 755 ${DEPLOY_DIR}/night_runner.sh

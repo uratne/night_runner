@@ -4,12 +4,12 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/include/opencv4",
-                "/usr/local/include/opencv4"
+                "${workspaceFolder}/include",
+                "/home/uratne/anaconda3/envs/live_alert/include/opencv4"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",
-            "cStandard": "c17",
+            "cStandard": "c11",
             "cppStandard": "c++14",
             "intelliSenseMode": "linux-gcc-x64"
         }
